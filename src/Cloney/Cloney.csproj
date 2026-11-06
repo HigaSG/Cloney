@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Cloney</AssemblyName>
+    <RootNamespace>Cloney</RootNamespace>
+    <StartupObject>Cloney.Program</StartupObject>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\cloney.ico</ApplicationIcon>
+    <Version>0.1.0</Version>
+    <Product>Cloney</Product>
+    <Description>Lançador de múltiplas instâncias para Windows</Description>
+    <!-- Avisos sobre DPI no manifesto (WinForms) não se aplicam: o manifesto é compartilhado com o WPF. -->
+    <NoWarn>$(NoWarn);WFAC010</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\cloney.ico" />
+  </ItemGroup>
+
+</Project>

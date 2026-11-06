@@ -1,0 +1,17 @@
+# Saídas de build
+bin/
+obj/
+publish/
+dist/
+
+# Dados pessoais / sessões do Claude (NUNCA versionar)
+migrar/
+
+# Config local do Claude Code
+.mcp.json
+.claude/
+
+# IDE / sistema
+.vs/
+*.user
+Thumbs.db
